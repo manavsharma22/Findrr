@@ -225,8 +225,11 @@ function getCookie(cname)
 function checkCookie()
 {
     var loc = getCookie("loc");
-    if (loc != undefined)
-    {
+    if (loc == undefined){
+    
+        console.log("Cookies not set yet");
+    }
+    else{
         alert("You were previously at: " + loc);
     }
     
